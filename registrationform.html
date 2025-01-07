@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" 
+content="width=device-width, initialscale=1.0">
+ <title>Registration Form</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ color: #333;
+ margin: 20px;
+ }
+ h1 {
+ text-align: center;
+ color: #333;
+ }
+ table {
+ margin: 0 auto;
+ border-collapse: collapse;
+ width: 50%;
+ }
+ table, th, td {
+ border: 1px solid #ccc;
+ }
+ th, td {
+ padding: 10px;
+ text-align: left;
+ }
+ th {
+ background-color: #f2f2f2;
+ }
+ input[type="text"], 
+input[type="password"], 
+input[type="number"], input[type="date"], 
+select, textarea {
+ width: 100%;
+ padding: 8px;
+ margin: 4px 0;
+ box-sizing: border-box;
+ }
+ input[type="submit"], 
+input[type="reset"] {
+ width: 48%;
+ padding: 10px;
+ margin: 4px 1%;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+ input[type="reset"] {
+ background-color: #f44336;
+ }
+ input[type="submit"]:hover, 
+input[type="reset"]:hover {
+ opacity: 0.9;
+ }
+ </style>
+</head>
+<body>
+ <h1>Registration Form</h1>
+ <form action="#" method="post">
+ <table>
+ <tr>
+ <th colspan="2">Personal 
+Information</th>
+ </tr>
+ <tr>
+ <td>First Name:</td>
+ <td><input type="text" 
+name="firstname" required></td>
+ </tr>
+ <tr>
+ <td>Last Name:</td>
+ <td><input type="text" 
+name="lastname" required></td>
+ </tr>
+ <tr>
+ <td>Password:</td>
+ <td><input type="password" 
+name="password" required></td>
+ </tr>
+ <tr>
+ <td>Age:</td>
+ <td><input type="number" 
+name="age" required></td>
+ </tr>
+ <tr>
+ <td>Date of Birth:</td>
+ <td><input type="date" 
+name="dob" required></td>
+ </tr>
+ <tr>
+ <td>Gender:</td>
+ <td>
+ <input type="radio" 
+name="gender" value="male" required> 
+Male
+ <input type="radio" 
+name="gender" value="female" required> 
+Female
+ <input type="radio" 
+name="gender" value="other" required> 
+Other
+ </td>
+ </tr>
+ <tr>
+ <td>Hobbies:</td>
+ <td>
+ <input type="checkbox" 
+name="hobby1" value="Reading"> Reading
+ <input type="checkbox" 
+name="hobby2" value="Traveling"> 
+Traveling
+ <input type="checkbox" 
+name="hobby3" value="Cooking"> Cooking
+ <input type="checkbox" 
+name="hobby4" value="Sports"> Sports
+ </td>
+ </tr>
+ <tr>
+ <td>Country:</td>
+ <td>
+ <select name="country" 
+required>
+ <option value="">Select a 
+country</option>
+ <option 
+value="USA">USA</option>
+ <option 
+value="Canada">Canada</option>
+ <option 
+value="UK">UK</option>
+ <option 
+value="Australia">Australia</option>
+ <option 
+value="India">India</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+ <td>Address:</td>
+ <td><textarea name="address" 
+rows="4" required></textarea></td>
+ </tr>
+ <tr>
+ <td colspan="2" style="text-align: 
+center;">
+ <input type="submit" 
+value="Submit">
+ <input type="reset" 
+value="Reset">
+ </td>
+ </tr>
+ </table>
+ </form>
+</body>
+</html>

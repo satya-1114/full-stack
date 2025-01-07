@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Understanding Hyperlinks in HTML</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            color: #333; 
+            line-height: 1.6; 
+            margin: 20px; 
+        } 
+        h1, h2 { 
+            color: #333; 
+        } 
+        p { 
+            margin-bottom: 20px; 
+        } 
+        a { 
+            color: #1a0dab; 
+            text-decoration: none; 
+        } 
+        a:hover { 
+            text-decoration: underline; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>Understanding Hyperlinks in HTML</h1> 
+<p>In HTML, hyperlinks are created using the <code>&lt;a&gt;</code> (anchor) tag. The 
+<code>href</code> attribute specifies the URL of the page the link goes to, and the 
+<code>target</code> attribute specifies where to open the linked document.</p> 
+<h2>Basic Hyperlink</h2> 
+<p>A basic hyperlink is created by using the <code>&lt;a&gt;</code> tag with the 
+<code>href</code> attribute.</p> 
+<p><a href="https://www.example.com">Visit Example.com</a></p> 
+<p>In the above example, clicking the link will take you to 
+<code>https://www.example.com</code>.</p> 
+<h2>Open Link in a New Tab</h2> 
+<p>To open the link in a new tab, use the <code>target="_blank"</code> attribute.</p> 
+<p><a href="https://www.example.com" target="_blank">Visit Example.com in a New 
+Tab</a></p> 
+<p>In the above example, clicking the link will open <code>https://www.example.com</code> 
+in a new tab.</p> 
+<h2>Open Link in the Same Frame</h2> 
+<p>To open the link in the same frame (default behavior), use the 
+<code>target="_self"</code> attribute.</p> 
+<p><a href="https://www.example.com" target="_self">Visit Example.com in the Same 
+Frame</a></p> 
+<p>In the above example, clicking the link will open <code>https://www.example.com</code> 
+in the same tab or frame.</p> 
+<h2>Open Link in a Parent Frame</h2> 
+<p>To open the link in the parent frame, use the <code>target="_parent"</code> attribute. 
+This is useful when dealing with frames.</p> 
+<p><a href="https://www.example.com" target="_parent">Visit Example.com in the Parent 
+Frame</a></p> 
+<h2>Open Link in the Full Body of the Window</h2> 
+<p>To open the link in the full body of the window, use the <code>target="_top"</code> 
+attribute. This is also useful when dealing with frames.</p> 
+<p><a href="https://www.example.com" target="_top">Visit Example.com in the Full Body of 
+the Window</a></p> 
+<h2>Relative Links</h2> 
+<p>Links can also be relative, pointing to other pages within the same website.</p> 
+<p><a href="contact.html">Contact Us</a></p> 
+<p>In the above example, clicking the link will take you to the <code>contact.html</code> 
+page within the same website.</p> 
+<h2>Email Links</h2> 
+<p>You can also create a link to send an email using the <code>mailto:</code> scheme.</p> 
+<p><a href="mailto:example@example.com">Send an Email</a></p> 
+<p>In the above example, clicking the link will open the default email client to send an email to 
+<code>example@example.com</code>.</p> 
+<h2>Conclusion</h2> 
+<p>Hyperlinks are a fundamental part of HTML, allowing users to navigate between different 
+pages and resources. By using the <code>href</code> attribute, you can specify the destination 
+of the link, and by using the <code>target</code> attribute, you can control where the link 
+opens.</p> 
+</body> 
+</html>
