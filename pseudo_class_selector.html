@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Class Selector Example</title>
+<style>
+/* Change background color when hovering over a button */
+ button:hover {
+ background-color: lightblue;
+ color: white;
+ }
+/* Change border color when an input field is focused */
+ input:focus {
+ border: 2px solid green;
+ }
+ /* Style the first child of a list */
+ ul li:first-child {
+ font-weight: bold;
+ color: red;
+ }
+ /* Style every even child in the list */
+ ul li:nth-child(even) {
+ background-color: #f2f2f2;
+ }
+ /* Change color when a link is visited */
+ a:visited {
+ color: purple;
+ }
+ </style>
+</head>
+<body>
+ <h2>Pseudo Class Selector Demo</h2>
+ <button>Hover over me</button>
+ <br><br>
+<input type="text" placeholder="Focus on me">
+ <br><br>
+ <ul>
+ <li>First item (styled with :first-child)</li>
+ <li>Second item</li>
+ <li>Third item</li>
+ <li>Fourth item</li>
+ <li>Fifth item</li>
+ </ul>
+ <br>
+<a href="https://google.com">Visited link example</a>
+</body>
+</html>
