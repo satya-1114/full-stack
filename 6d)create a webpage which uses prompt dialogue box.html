@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Voter Information</title> 
+<style> 
+table { 
+border-collapse: collapse; 
+} 
+th, td { 
+border: 1px solid black; 
+      padding: 10px; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h2>Voter Information</h2> 
+  <button onclick="getVoterInfo()">Get Voter Info</button> 
+  <div id="voterInfo"></div> 
+ 
+  <script> 
+    function getVoterInfo() { 
+      let name = prompt("Please enter your name:"); 
+      let age = parseInt(prompt("Please enter your age:")); 
+      let votingEligibility = (age >= 18) ? "Eligible" : "Not Eligible"; 
+      let voterInfoHtml = ` 
+        <table> 
+          <tr> 
+            <th>Name</th> 
+            <th>Age</th> 
+            <th>Voting Eligibility</th> 
+          </tr> 
+          <tr> 
+            <td>${name}</td> 
+            <td>${age}</td> 
+            <td>${votingEligibility}</td> 
+          </tr> 
+        </table> 
+      `;    document.getElementById("voterInfo").innerHTML = 
+voterInfoHtml; 
+    } 
+  </script> </body> </html>
